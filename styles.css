@@ -10,8 +10,56 @@
     font: inherit;
 }
 
+html,
+body,
+.mainWrapper {
+    height: 100%
+}
+
 body {
     min-height: 100vh;
-    background-color: #d1edff;
+    background-color: #e0f7d5;
     font-family: 'Roboto', sans-serif;
+}
+
+.mainWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navWrapper,
+.mainBodyWrapper,
+.footWrapper {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.footWrapper {
+    justify-content: center;
+}
+
+.mainBodyWrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-right: 50px;
+}
+
+#weatherCardDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 200px;
+    height: 150px;
+    padding: 10px;
 }

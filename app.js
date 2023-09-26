@@ -22,8 +22,7 @@ function fetchWeather(city) {
       return response.json();
     })
     .then(function (response) {
-      // app.textContent = `Location: ${response.location.name},  Temperature: ${response.current.temp_c}'c`;
-      app.innerHTML = `<div class="location">Location: ${response.location.name}</div> <div class="temp_c">Temperature: ${response.current.temp_c}</div>`;
+      app.innerHTML = `Location: ${response.location.name}Temperature: ${response.current.temp_c}`;
     })
     .catch(function (error) {
       console.error("Error fetching weather data:", error);

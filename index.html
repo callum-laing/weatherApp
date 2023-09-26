@@ -12,10 +12,30 @@
 
 <body>
 
-    <input type="text" id="cityInput" placeholder="Enter a city">
-    <button id="searchButton">Search</button>
-    <div id="app"></div>
 
+    <div class="mainWrapper">
+
+        <header class="navWrapper">
+            <div class="searchWrapper">
+                <input type="text" id="cityInput" placeholder="Enter a city">
+                <button id="searchButton">Search</button>
+            </div>
+            <h1>Weather Report</h1>
+        </header>
+
+
+        <section class="mainBodyWrapper">
+
+            <div id="weatherCardDisplay">
+                <div id="app"></div>
+            </div>
+        </section>
+
+        <footer class="footWrapper">
+            <h2>Made by Callum Laing</h2>
+        </footer>
+
+    </div>
     <script src="app.js"></script>
 </body>
 
