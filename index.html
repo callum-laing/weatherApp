@@ -14,7 +14,6 @@
 
 
     <div class="mainWrapper">
-
         <header class="navWrapper">
             <div class="searchWrapper">
                 <input type="text" id="cityInput" placeholder="Enter a city">
@@ -23,19 +22,19 @@
             <h1>Weather Report</h1>
         </header>
 
-
         <section class="mainBodyWrapper">
 
-            <div id="weatherCardDisplay">
-                <div id="app"></div>
+            <div id="weatherCard" class="weather-card">
+                <p class="location">Location: <span id="locationName"></span></p>
+                <p class="temperature">Temperature: <span id="temperature"></span></p>
             </div>
         </section>
 
         <footer class="footWrapper">
             <h2>Made by Callum Laing</h2>
         </footer>
-
     </div>
+    <script type='text/javascript' src='config.js'></script>
     <script src="app.js"></script>
 </body>
 
