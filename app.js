@@ -6,16 +6,12 @@ const temperature = document.querySelector("#temperature");
 var myKey = config.MY_KEY;
 
 searchButton.addEventListener("click", async function () {
+  console.log("hello world");
   const city = cityInput.value;
   if (city) {
     try {
-      const response = await fetch(
-        `http://api.weatherapi.com/v1/current.json?key=${myKey}&q=${city}&aqi=no`,
-        {
-          mode: "cors",
-        }
-      );
-      console.log(response);
+      const url = `http://api.weatherapi.com/v1/current.json?key=${myKey}&q=${city}&aqi=no`;
+      const response = await fetch(url, { mode: "cors" });
 
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
